@@ -3,7 +3,7 @@ Example of scala3 chunked transfer encoding http server
 
 Note that Scala treats \n and \r\n both Carriage return sequences the same, meaning the following HTTP response is sufficient to implement a ```Transfer-Encoding: chunk``` server.
 
-
+```
 """HTTP/1.1 200 OK
                           |Content-Type: text/plain
                           |Transfer-Encoding: chunked
@@ -15,7 +15,7 @@ Note that Scala treats \n and \r\n both Carriage return sequences the same, mean
                           |Mozilla
                           |
                           |0"""
-
+```
 
 
 # Chunked-transfer encoding
